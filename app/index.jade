@@ -1,0 +1,23 @@
+doctype html
+html(lang='en', ng-app='blogRoll')
+  head
+    meta(charset='UTF-8')
+    title Document
+    script(src='./external/angular/angular.min.js', type='text/javascript')
+    script(src='./external/jquery/dist/jquery.min.js', type='text/javascript')
+    link(rel='stylesheet', type='text/css', href='./external/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='./css/styles/style.css')
+  body.container(ng-controller='TestController as test')
+    .jumbotron
+      .align-center
+        | Welcome to the Javascript Blog Roll Exstravaganza {{3+ 3}}
+    .row
+      .col-md-6 Hello
+      .col-md-6 Hello {{test.testString}}
+
+    .red
+
+
+    script(src='./external/bootstrap/dist/js/bootstrap.min.js', type='text/javascript')
+
+    script(src='/concat.js', type='text/javascript')
