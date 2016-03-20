@@ -8,6 +8,21 @@ html(lang='en', ng-app='blogRoll')
     link(rel='stylesheet', type='text/css', href='./external/bootstrap/dist/css/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='./css/styles/style.css')
   body.container(ng-controller='TestController as test')
+    nav.navbar.navbar-default
+      a.navbar-brand(href="#") Javascript Blogs
+      ul.nav.navbar-nav.navbar-right
+        li.dropdown
+          a.dropdown-toggle(data-toggle="dropdown" role="button") Filter Blogs
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href="#") Blog 1
+            li
+              a(href="#") Blog 2
+            li
+              a(href="#") Blog 3
+            li
+              a(href="#") Blog 4
     .jumbotron
       .align-center
         | Welcome to the Javascript Blog Roll Exstravaganza {{3+ 3}}
